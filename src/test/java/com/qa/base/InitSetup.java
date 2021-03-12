@@ -19,7 +19,7 @@ public class InitSetup {
 		driver = new ChromeDriver(); // Launch
 		
 		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);  // changed the implicitwait from 5 to 10 , because of getting pagetimeout error
 
 		driver.manage().deleteAllCookies(); // Delete all the cookies
 	
